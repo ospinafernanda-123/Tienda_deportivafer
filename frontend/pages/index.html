@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi Sitio Web HTML5</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+
+</head>
+
+<body>
+
+
+   <header>
+
+  <img src="../img/logo.jpeg" alt="Logo Tienda Deportiva FER" class="logo"> 
+
+
+
+    <h1>Tienda Deportiva FER</h1>
+
+    <p>
+        Encuentra todo lo necesario para practicar tu deporte favorito.
+    </p>
+
+
+   <nav>
+
+    <a href="quienes-somos.html">Quiénes Somos</a> </li> |
+    <a href="productos.html">Productos</a> </li> |
+    <a href="servicios.html">Servicios</a> </li>|
+    <a href="blog.html">Blog</a></li> |
+    <a href="contacto.html">Contacto</a></li> |
+    <a href="login.html">Login</a></li> |
+
+   </nav>
+
+   </header>
+
+   <main> 
+
+    
+
+    <section class="benefits-section">
+        <h2>¿Por qué elegirnos?</h2>
+        <div class="benefits-grid">
+            <article class="benefit-card">
+                <h3>Calidad garantizada</h3>
+                <p>Productos seleccionados para ofrecer durabilidad y comodidad.</p>
+            </article>
+            <article class="benefit-card">
+                <h3>Asesoría personalizada</h3>
+                <p>Te ayudamos a elegir lo mejor según tu deporte y tus necesidades.</p>
+            </article>
+            <article class="benefit-card">
+                <h3>Precios accesibles</h3>
+                <p>Ofertas y opciones para cada presupuesto, sin perder calidad.</p>
+            </article>
+        </div>
+    </section>
+    
+    
+
+    <section id="productos">
+
+    <h2>Productos</h2>
+
+    <p>Ropa deportiva, zapatillas y accesorios.</p>
+    <div class="galeria-productos" id="galeria-productos"></div>
+
+</section>
+
+
+<script>
+   const imagenesProductos = [
+    'ima1.jpg',
+    'ima2.jpg',
+    'ima3.jpg',
+    'ima4.jpg',
+    'ima5.jpg',
+    'ima6.jpg',
+    'imag7.jpg',
+    'imag8.jpg',
+    'imag9.jpg',
+    'imag10.jpg',
+    'imag11.jpg',
+    'imag12.jpg',
+    'imag13.jpg',
+    'imag14.jpg',
+    'Imag15.jpg',
+    'imag16.jpg',
+    'imag17.jpg',
+    'imag18.jpg',
+    'imag19.jpg',
+    'imag20.jpg',
+    'imag21.jpg',
+    'imag22.jpg',
+    'imag24.jpg',
+    'imag25.jpg',
+    'imag26.jpg',
+    'imag27.jpg',
+    'imag28.jpg',
+    'imag29.jpg',
+    'imag31.jpg',
+    'imag32.jpg',
+    'imag33.jpg',
+    'imag34.jpg',
+    'imag35.jpg',
+    'imag36.jpg',
+    'imag37.jpg',
+    'imag38.jpg',
+    'imag39.jpg',
+    'imag40.jpg',
+    'imag41.jpg',
+    'imag42.jpg',
+    'imag43.jpg',
+    'imag44.jpg',
+    'imag45.jpg',
+    'imag46.jpg',
+    'imag47.jpg',
+    'imag48.jpg',
+    'imag49.jpg',
+    'imag50.jpg',
+    'imag51.jpg',
+    'imag52.jpg',
+    'iamg30.jpg'
+];
+
+    const preciosProductos = [
+        120000, 130000, 85000, 160000, 180000, 68000,
+        103000, 90000, 200000, 80000, 32000, 160000,
+        25000, 170000, 98000, 112000, 40000, 60000,
+        90000, 45000, 110000, 50000, 40000, 99000,
+        190000, 92000, 78000, 103000, 88000, 130000,
+        80000, 72000, 25000, 115000, 35000, 56000,
+        95000, 122000, 32000, 76000, 50000, 118000,
+        79000, 115000, 29900, 109000, 111000, 72000,
+        35000, 93000, 47000
+    ];
+
+    const nombresProductos = [
+        'Conjunto 3 piezas',
+        'Zapatillas JINTU',
+        'Set dos piezas (pantaloneta y camiseta)',
+        'Zapatos Warrior',
+        'Set completo',
+        'Shorts de entrenamiento',
+        'Conjunto Only',
+        'Conjunto Fit',
+        'Conjunto dama y caballero',
+        'Uniforme Futbol',
+        'Medias deporivas',
+        'Set 3 piezas',
+        'Tarro decorativo',
+        'Set 6 piezas',
+        'Conjunto Fasihon',
+        'Conjunto largo',
+        'Falda short',
+        'Licra y leggins ligera',
+        'Uniforme de Futbol',
+        'Camisilla deportiva',
+        'Conjunto deportivo',
+        'Buso deportivo',
+        'Camisilla Filesh',
+        'Set completo',
+        'Set 8 piezas',
+        'Polo deportivo',
+        'Zapatos New Balance',
+        'Zapatos Nike',
+        'Zapatos Nike',
+        'Zapatos New Balance',
+        'Chompa',
+        'Short y crop top',
+        'Media Nike',
+        'Conjunto de hombre completo',
+        'Medias deportivas',
+        'Sudadera Deportiva',
+        'Uniforme de Futbol',
+        'Uniforme de Futbol femenino',
+        'Buso licrado con cierre',
+        'Zapatos Jintu',
+        'Conjuntos licrados',
+        'Falda Short y buso',
+        'Sudadera y chompa',
+        'Set por 3',
+        'Busos',
+        'Zapatos Nike',
+        'Zapatillas de paseo',
+        'Set x3 fresca',
+        'Termo',
+        'Zapatos New Balance',
+        'Zapatos Deportivos'
+    ];
+
+    const contenedor = document.getElementById('galeria-productos');
+
+    if (contenedor) {
+        imagenesProductos.forEach((archivo, index) => {
+            const card = document.createElement('article');
+            card.className = 'product-card';
+            const nombreProducto = nombresProductos[index] || `Producto ${index + 1}`;
+
+            card.innerHTML = `
+                <img src="/frontend/img/${archivo}" alt="${nombreProducto}">
+                <h3>${nombreProducto}</h3>
+                <p class="precio">$ ${preciosProductos[index].toLocaleString('es-CO')}</p>
+                <a class="btn btn-primary" href="#contacto">Comprar ahora</a>
+            `;
+
+            contenedor.appendChild(card);
+        });
+    }
+</script>
+
+
+
+    <div class="video-container">
+        <video controls>
+            <source src="/frontend/video.mp4" type="video/mp4">
+            Tu navegador no soporta la etiqueta de video.
+        </video>
+        <p class="video-caption">Video institucional de Tienda Deportiva FER</p>
+    </div>
+
+
+
+  
+</section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="footer-content">
+        <div>
+            <h3>Tienda Deportiva FER</h3>
+            <p>Tu tienda de confianza para entrenar, competir y disfrutar de tu deporte favorito.</p>
+        </div>
+        <div>
+            <h4>Contacto</h4>
+            <ul>
+                <li>Correo: tiendadeportivafer@gmail.com</li>
+                <li>WhatsApp: 3127236334</li>
+                <li>Instagram: @tiendadeportivalafer</li>
+            </ul>
+        </div>
+        <div>
+            <h4>Horario</h4>
+            <p>Lunes a sábado: 8:00 a.m. - 7:00 p.m.</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 Tienda Deportiva FER. Todos los derechos reservados.</p>
+    </div>
+</footer>
+<a href="https://wa.me/573127236334" class="whatsapp" target="_blank">
+    <img src="/frontend/img/whatsapp.svg" alt="WhatsApp" class="social-icon">
+</a>
+
+<a href="https://www.facebook.com/TiendaDeportivaFER" class="facebook" target="_blank">
+    <img src="/frontend/img/facebook.svg" alt="Facebook" class="social-icon">
+</a>
+<a href="https://www.instagram.com/tiendadeportivalafer" class="instagram" target="_blank">
+    <img src="/frontend/img/instagram.svg" alt="Instagram" class="social-icon">
+</a>
+<script src="fernanda.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
