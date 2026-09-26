@@ -52,126 +52,162 @@
 
     </main>
 
-    <script>
-        const productos = [
-            { archivo: 'ima1.jpg', nombre: 'Conjunto 3 piezas', precio: 120000 },
-            { archivo: 'ima2.jpg', nombre: 'Zapatillas JINTU', precio: 130000 },
-            { archivo: 'ima3.jpg', nombre: 'Set dos piezas (pantaloneta y camiseta)', precio: 85000 },
-            { archivo: 'ima4.jpg', nombre: 'Zapatos Warrior', precio: 160000 },
-            { archivo: 'ima5.jpg', nombre: 'Set completo', precio: 180000 },
-            { archivo: 'ima6.jpg', nombre: 'Shorts de entrenamiento', precio: 68000 },
-            { archivo: 'imag7.jpg', nombre: 'Conjunto Only', precio: 103000 },
-            { archivo: 'imag8.jpg', nombre: 'Conjunto Fit', precio: 90000 },
-            { archivo: 'imag9.jpg', nombre: 'Conjunto dama y caballero', precio: 200000 },
-            { archivo: 'imag10.jpg', nombre: 'Uniforme Futbol', precio: 80000 },
-            { archivo: 'imag11.jpg', nombre: 'Medias deporivas', precio: 32000 },
-            { archivo: 'imag12.jpg', nombre: 'Set 3 piezas', precio: 160000 },
-            { archivo: 'imag13.jpg', nombre: 'Tarro decorativo', precio: 25000 },
-            { archivo: 'imag14.jpg', nombre: 'Set 6 piezas', precio: 170000 },
-            { archivo: 'imag15.jpg', nombre: 'Conjunto Fasihon', precio: 98000 },
-            { archivo: 'imag16.jpg', nombre: 'Conjunto largo', precio: 112000 },
-            { archivo: 'imag17.jpg', nombre: 'Falda short', precio: 40000 },
-            { archivo: 'imag18.jpg', nombre: 'Licra y leggins ligera', precio: 60000 },
-            { archivo: 'imag19.jpg', nombre: 'Uniforme de Futbol', precio: 90000 },
-            { archivo: 'imag20.jpg', nombre: 'Camisilla deportiva', precio: 45000 },
-            { archivo: 'imag21.jpg', nombre: 'Conjunto deportivo', precio: 110000 },
-            { archivo: 'imag22.jpg', nombre: 'Buso deportivo', precio: 50000 },
-            { archivo: 'imag24.jpg', nombre: 'Camisilla Filesh', precio: 40000 },
-            { archivo: 'imag25.jpg', nombre: 'Set completo', precio: 99000 },
-            { archivo: 'imag26.jpg', nombre: 'Set 8 piezas', precio: 190000 },
-            { archivo: 'imag27.jpg', nombre: 'Polo deportivo', precio: 92000 },
-            { archivo: 'imag28.jpg', nombre: 'Zapatos New Balance', precio: 78000 },
-            { archivo: 'imag29.jpg', nombre: 'Zapatos Nike', precio: 103000 },
-            { archivo: 'imag30.jpg', nombre: 'Zapatos Deportivos', precio: 47000 },
-            { archivo: 'imag31.jpg', nombre: 'Zapatos Nike', precio: 88000 },
-            { archivo: 'imag32.jpg', nombre: 'Zapatos New Balance', precio: 130000 },
-            { archivo: 'imag33.jpg', nombre: 'Chompa ', precio: 80000 },
-            { archivo: 'imag34.jpg', nombre: 'Short y crop top', precio: 72000 },
-            { archivo: 'imag35.jpg', nombre: 'Media Nike', precio: 25000 },
-            { archivo: 'imag36.jpg', nombre: 'Conjunto de hombre completo', precio: 115000 },
-            { archivo: 'imag37.jpg', nombre: 'Medias deportivas', precio: 35000 },
-            { archivo: 'imag38.jpg', nombre: 'Sudadera Deportiva', precio: 56000 },
-            { archivo: 'imag39.jpg', nombre: 'Uniforme de Futbol', precio: 95000 },
-            { archivo: 'imag40.jpg', nombre: 'Uniforme de Futbol femenino', precio: 122000 },
-            { archivo: 'imag41.jpg', nombre: 'Buso licrado con cierre', precio: 32000 },
-            { archivo: 'imag42.jpg', nombre: 'Zapatos Jintu', precio: 76000 },
-            { archivo: 'imag43.jpg', nombre: 'Conjuntos licrados', precio: 50000 },
-            { archivo: 'imag44.jpg', nombre: 'Falda Short y buso', precio: 118000 },
-            { archivo: 'imag45.jpg', nombre: 'Sudadera y chompa', precio: 79000 },
-            { archivo: 'imag46.jpg', nombre: 'Set por 3', precio: 115000 },
-            { archivo: 'imag47.jpg', nombre: 'Busos', precio: 29900 },
-            { archivo: 'imag48.jpg', nombre: 'Zapatos Nike ', precio: 109000 },
-            { archivo: 'imag49.jpg', nombre: 'Zapatillas de paseo', precio: 111000 },
-            { archivo: 'imag50.jpg', nombre: 'Set x3 fresca', precio: 72000 },
-            { archivo: 'imag51.jpg', nombre: 'Termo', precio: 35000 },
-            { archivo: 'imag52.jpg', nombre: 'Zapatos New Balance', precio: 93000 }
-        ];
+  <script>
+const imagenesProductos = [
+    'ima1.jpg',
+    'ima2.jpg',
+    'ima3.jpg',
+    'ima4.jpg',
+    'ima5.jpg',
+    'ima6.jpg',
+    'imag7.jpg',
+    'imag8.jpg',
+    'imag9.jpg',
+    'imag10.jpg',
+    'imag11.jpg',
+    'imag12.jpg',
+    'imag13.jpg',
+    'imag14.jpg',
+    'Imag15.jpg',
+    'imag16.jpg',
+    'imag17.jpg',
+    'imag18.jpg',
+    'imag19.jpg',
+    'imag20.jpg',
+    'imag21.jpg',
+    'imag22.jpg',
+    'imag24.jpg',
+    'imag25.jpg',
+    'imag26.jpg',
+    'imag27.jpg',
+    'imag28.jpg',
+    'imag29.jpg',
+    'imag30.jpg',
+    'imag31.jpg',
+    'imag32.jpg',
+    'imag33.jpg',
+    'imag34.jpg',
+    'imag35.jpg',
+    'imag36.jpg',
+    'imag37.jpg',
+    'imag38.jpg',
+    'imag39.jpg',
+    'imag40.jpg',
+    'imag41.jpg',
+    'imag42.jpg',
+    'imag43.jpg',
+    'imag44.jpg',
+    'imag45.jpg',
+    'imag46.jpg',
+    'imag47.jpg',
+    'imag48.jpg',
+    'imag49.jpg',
+    'imag50.jpg',
+    'imag51.jpg',
+    'imag52.jpg'
+];
 
-        const track = document.getElementById('carousel-track');
-        const dotsContainer = document.getElementById('carousel-dots');
-        const prevButton = document.getElementById('prev-producto');
-        const nextButton = document.getElementById('next-producto');
-        let currentIndex = 0;
+const preciosProductos = [
+    120000, 130000, 85000, 160000, 180000, 68000,
+    103000, 90000, 200000, 80000, 32000, 160000,
+    25000, 170000, 98000, 112000, 40000, 60000,
+    90000, 45000, 110000, 50000, 40000, 99000,
+    190000, 92000, 78000, 103000, 88000, 130000,
+    80000, 72000, 25000, 115000, 35000, 56000,
+    95000, 122000, 32000, 76000, 50000, 118000,
+    79000, 115000, 29900, 109000, 111000, 72000,
+    35000, 93000, 47000
+];
 
-        function renderCarousel() {
-            if (!track) return;
+const nombresProductos = [
+    'Conjunto 3 piezas',
+    'Zapatillas JINTU',
+    'Set dos piezas',
+    'Zapatos Warrior',
+    'Set completo',
+    'Shorts de entrenamiento',
+    'Conjunto Only',
+    'Conjunto Fit',
+    'Conjunto dama y caballero',
+    'Uniforme Futbol',
+    'Medias deportivas',
+    'Set 3 piezas',
+    'Tarro decorativo',
+    'Set 6 piezas',
+    'Conjunto Fashion',
+    'Conjunto largo',
+    'Falda short',
+    'Licra y leggins ligera',
+    'Uniforme de Futbol',
+    'Camisilla deportiva',
+    'Conjunto deportivo',
+    'Buso deportivo',
+    'Camisilla Filesh',
+    'Set completo',
+    'Set 8 piezas',
+    'Polo deportivo',
+    'Zapatos New Balance',
+    'Zapatos Nike',
+    'Zapatos Nike',
+    'Zapatos New Balance',
+    'Chompa',
+    'Short y crop top',
+    'Media Nike',
+    'Conjunto de hombre completo',
+    'Medias deportivas',
+    'Sudadera Deportiva',
+    'Uniforme de Futbol',
+    'Uniforme de Futbol femenino',
+    'Buso licrado con cierre',
+    'Zapatos Jintu',
+    'Conjuntos licrados',
+    'Falda Short y buso',
+    'Sudadera y chompa',
+    'Set por 3',
+    'Busos',
+    'Zapatos Nike',
+    'Zapatillas de paseo',
+    'Set x3 fresca',
+    'Termo',
+    'Zapatos New Balance',
+    'Zapatos Deportivos'
+];
 
-            track.innerHTML = '';
-            dotsContainer.innerHTML = '';
+const contenedor = document.getElementById('galeria-productos');
 
-            productos.forEach((producto, index) => {
-                const card = document.createElement('article');
-                card.className = 'product-card';
-                card.innerHTML = `
-                    <img src="/frontend/img/${producto.archivo}" alt="${producto.nombre}" loading="lazy" onerror="this.onerror=null;this.src='/frontend/img/portada.jpg';">
-                    <h3>${producto.nombre}</h3>
-                    <p class="precio">$ ${producto.precio.toLocaleString('es-CO')}</p>
-                    <a class="btn btn-primary" href="contacto.html">Comprar ahora</a>
-                `;
-                track.appendChild(card);
+if (contenedor) {
 
-                const dot = document.createElement('button');
-                dot.className = 'dot';
-                dot.type = 'button';
-                dot.setAttribute('aria-label', `Ir al producto ${index + 1}`);
-                dot.addEventListener('click', () => {
-                    currentIndex = index;
-                    updateCarousel();
-                });
-                dotsContainer.appendChild(dot);
-            });
+    imagenesProductos.forEach((archivo, index) => {
 
-            updateCarousel();
-        }
+        const card = document.createElement('article');
 
-        function updateCarousel() {
-            if (!track) return;
-            const total = productos.length;
-            currentIndex = (currentIndex + total) % total;
-            track.style.transform = `translateX(-${currentIndex * 100}%)`;
-            const dots = dotsContainer.querySelectorAll('.dot');
-            dots.forEach((dot, index) => {
-                dot.classList.toggle('active', index === currentIndex);
-            });
-        }
+        card.className = 'product-card';
 
-        prevButton?.addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + productos.length) % productos.length;
-            updateCarousel();
-        });
+        const nombreProducto =
+            nombresProductos[index] || `Producto ${index + 1}`;
 
-        nextButton?.addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % productos.length;
-            updateCarousel();
-        });
+        card.innerHTML = `
+            <img 
+                src="../img/${archivo}" 
+                alt="${nombreProducto}"
+                class="producto-img"
+            >
 
-        setInterval(() => {
-            currentIndex = (currentIndex + 1) % productos.length;
-            updateCarousel();
-        }, 5000);
+            <h3>${nombreProducto}</h3>
 
-        renderCarousel();
-    </script>
+            <p class="precio">
+                $ ${preciosProductos[index].toLocaleString('es-CO')}
+            </p>
+
+            <a class="btn btn-primary" href="contacto.html">
+                Comprar ahora
+            </a>
+        `;
+
+        contenedor.appendChild(card);
+    });
+}
+</script>
 
     <section class="map-section">
         <h2>Encuéntranos</h2>
