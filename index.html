@@ -76,11 +76,7 @@
 
     <p>Ropa deportiva, zapatillas y accesorios.</p>
     <div class="galeria-productos" id="galeria-productos"></div>
-
-</section>
-
-
-<script>
+        <script>
 const imagenesProductos = [
     'frontend/img/ima1.jpg',
     'frontend/img/ima2.jpg',
@@ -134,7 +130,104 @@ const imagenesProductos = [
     'frontend/img/imag52.jpg',
     'frontend/img/iamg30.jpg'
 ];
+
+const preciosProductos = [
+    120000, 130000, 85000, 160000, 180000, 68000,
+    103000, 90000, 200000, 80000, 32000, 160000,
+    25000, 170000, 98000, 112000, 40000, 60000,
+    90000, 45000, 110000, 50000, 40000, 99000,
+    190000, 92000, 78000, 103000, 88000, 130000,
+    80000, 72000, 25000, 115000, 35000, 56000,
+    95000, 122000, 32000, 76000, 50000, 118000,
+    79000, 115000, 29900, 109000, 111000, 72000,
+    35000, 93000, 47000
+];
+
+const nombresProductos = [
+    'Conjunto 3 piezas',
+    'Zapatillas JINTU',
+    'Set dos piezas (pantaloneta y camiseta)',
+    'Zapatos Warrior',
+    'Set completo',
+    'Shorts de entrenamiento',
+    'Conjunto Only',
+    'Conjunto Fit',
+    'Conjunto dama y caballero',
+    'Uniforme Futbol',
+    'Medias deportivas',
+    'Set 3 piezas',
+    'Tarro decorativo',
+    'Set 6 piezas',
+    'Conjunto Fashion',
+    'Conjunto largo',
+    'Falda short',
+    'Licra y leggins ligera',
+    'Uniforme de Futbol',
+    'Camisilla deportiva',
+    'Conjunto deportivo',
+    'Buso deportivo',
+    'Camisilla Filesh',
+    'Set completo',
+    'Set 8 piezas',
+    'Polo deportivo',
+    'Zapatos New Balance',
+    'Zapatos Nike',
+    'Zapatos Nike',
+    'Zapatos New Balance',
+    'Chompa',
+    'Short y crop top',
+    'Media Nike',
+    'Conjunto de hombre completo',
+    'Medias deportivas',
+    'Sudadera Deportiva',
+    'Uniforme de Futbol',
+    'Uniforme de Futbol femenino',
+    'Buso licrado con cierre',
+    'Zapatos Jintu',
+    'Conjuntos licrados',
+    'Falda Short y buso',
+    'Sudadera y chompa',
+    'Set por 3',
+    'Busos',
+    'Zapatos Nike',
+    'Zapatillas de paseo',
+    'Set x3 fresca',
+    'Termo',
+    'Zapatos New Balance',
+    'Zapatos Deportivos'
+];
+
+const contenedor = document.getElementById('galeria-productos');
+
+if (contenedor) {
+    imagenesProductos.forEach((archivo, index) => {
+
+        const card = document.createElement('article');
+        card.className = 'product-card';
+
+        const nombreProducto =
+            nombresProductos[index] || `Producto ${index + 1}`;
+
+        card.innerHTML = `
+            <img src="${archivo}" alt="${nombreProducto}">
+            <h3>${nombreProducto}</h3>
+            <p class="precio">
+                $ ${preciosProductos[index].toLocaleString('es-CO')}
+            </p>
+            <a class="btn btn-primary" href="#contacto">
+                Comprar ahora
+            </a>
+        `;
+
+        contenedor.appendChild(card);
+    });
+}
 </script>
+
+
+</section>
+
+
 
 
 
